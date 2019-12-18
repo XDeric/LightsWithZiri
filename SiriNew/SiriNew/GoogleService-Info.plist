@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>270946587919-hnmljfpq9r0i08eo1p0a0t89q75cd74q.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.270946587919-hnmljfpq9r0i08eo1p0a0t89q75cd74q</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAho7VgQGLHRUCI3T1RKZMOjzK6PN2v6Q0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>270946587919</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.pursuit.lightsoff</string>
+	<key>PROJECT_ID</key>
+	<string>lightprj</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lightprj.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:270946587919:ios:eb907a49d36a04bebe9a7a</string>
+	<key>DATABASE_URL</key>
+	<string>https://lightprj.firebaseio.com</string>
+</dict>
+</plist>
