@@ -21,10 +21,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSUserActivityTypes</key>
-	<dict>
-		<key>changeStatus</key>
-		<string>com.pursuit.lightsoff</string>
-	</dict>
+	<array>
+		<string>LightsIntent</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

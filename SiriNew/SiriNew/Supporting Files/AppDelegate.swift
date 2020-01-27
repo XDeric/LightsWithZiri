@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
            
                switch userActivity.activityType{
-               case "practice.SiriNew":
+               case "com.pursuit.lightsoff":
                    if let ViewController = window?.rootViewController as? ViewController {
                        ViewController.changeStatus()
                    }

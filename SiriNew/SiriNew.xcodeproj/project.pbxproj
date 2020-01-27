@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		01747CC72315952790989FCF /* Pods_SiriNewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6845D65784A163C6D29DBF51 /* Pods_SiriNewTests.framework */; };
+		85404F5023C5348700E355F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85404F4F23C5348700E355F8 /* GoogleService-Info.plist */; };
+		85404F5223C5385A00E355F8 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85404F5123C5385A00E355F8 /* ButtonTableViewCell.swift */; };
+		85404F5423C63FC600E355F8 /* ButtonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85404F5323C63FC600E355F8 /* ButtonList.swift */; };
+		85404F5C23C6820700E355F8 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85404F5B23C6820700E355F8 /* IntentHandler.swift */; };
+		85404F6323C6820700E355F8 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856F995023A2E553001AA655 /* IntentsUI.framework */; };
+		85404F6623C6820700E355F8 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85404F6523C6820700E355F8 /* IntentViewController.swift */; };
+		85404F6923C6820700E355F8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85404F6723C6820700E355F8 /* MainInterface.storyboard */; };
+		85404F6D23C6820700E355F8 /* onOrOffUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 85404F6223C6820700E355F8 /* onOrOffUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		85404F7023C6820700E355F8 /* onOrOff.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 85404F5923C6820700E355F8 /* onOrOff.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		85404F7923C6875900E355F8 /* LightIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 85404F7823C6875900E355F8 /* LightIntents.intentdefinition */; };
+		85404F7E23C791CA00E355F8 /* LightIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 85404F7823C6875900E355F8 /* LightIntents.intentdefinition */; };
+		85404F7F23C791CB00E355F8 /* LightIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 85404F7823C6875900E355F8 /* LightIntents.intentdefinition */; };
+		85404F8123C79CD000E355F8 /* IntentHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85404F8023C79CD000E355F8 /* IntentHelper.swift */; };
+		85404F8323C7A25100E355F8 /* LightIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85404F8223C7A25100E355F8 /* LightIntentHandler.swift */; };
+		854F110323CE2DC70021C7DE /* LightActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854F110223CE2DC70021C7DE /* LightActivity.swift */; };
 		856F992623A29725001AA655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856F992523A29725001AA655 /* AppDelegate.swift */; };
 		856F992823A29725001AA655 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856F992723A29725001AA655 /* SceneDelegate.swift */; };
 		856F992A23A29725001AA655 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856F992923A29725001AA655 /* ViewController.swift */; };
@@ -18,13 +33,26 @@
 		856F994023A29729001AA655 /* SiriNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856F993F23A29729001AA655 /* SiriNewTests.swift */; };
 		856F994F23A2E54A001AA655 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856F994E23A2E54A001AA655 /* Intents.framework */; };
 		856F995123A2E553001AA655 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856F995023A2E553001AA655 /* IntentsUI.framework */; };
-		856F995323A41D35001AA655 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 856F995223A41D34001AA655 /* GoogleService-Info.plist */; };
 		856F995523A421AC001AA655 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856F995423A421AC001AA655 /* Status.swift */; };
 		856F995723A42B48001AA655 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856F995623A42B48001AA655 /* FirebaseService.swift */; };
 		C842490EA5597A1D81CAEF61 /* Pods_SiriNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6128D0186C018B778924F7C8 /* Pods_SiriNew.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		85404F6B23C6820700E355F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 856F991A23A29725001AA655 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85404F6123C6820700E355F8;
+			remoteInfo = onOrOffUI;
+		};
+		85404F6E23C6820700E355F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 856F991A23A29725001AA655 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85404F5823C6820700E355F8;
+			remoteInfo = onOrOff;
+		};
 		856F993C23A29729001AA655 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 856F991A23A29725001AA655 /* Project object */;
@@ -34,6 +62,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		85404F7723C6820700E355F8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				85404F7023C6820700E355F8 /* onOrOff.appex in Embed App Extensions */,
+				85404F6D23C6820700E355F8 /* onOrOffUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		14051BC6DEBA4AFA49942B09 /* Pods-SiriNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriNew.debug.xcconfig"; path = "Target Support Files/Pods-SiriNew/Pods-SiriNew.debug.xcconfig"; sourceTree = "<group>"; };
 		227185C0762068489A639DCE /* Pods-SiriNewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriNewTests.debug.xcconfig"; path = "Target Support Files/Pods-SiriNewTests/Pods-SiriNewTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -41,6 +84,20 @@
 		6128D0186C018B778924F7C8 /* Pods_SiriNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiriNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6845D65784A163C6D29DBF51 /* Pods_SiriNewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiriNewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD7537E191E15951898C59C /* Pods-SiriNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriNew.release.xcconfig"; path = "Target Support Files/Pods-SiriNew/Pods-SiriNew.release.xcconfig"; sourceTree = "<group>"; };
+		85404F4F23C5348700E355F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		85404F5123C5385A00E355F8 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		85404F5323C63FC600E355F8 /* ButtonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonList.swift; sourceTree = "<group>"; };
+		85404F5923C6820700E355F8 /* onOrOff.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = onOrOff.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		85404F5B23C6820700E355F8 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		85404F5D23C6820700E355F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85404F6223C6820700E355F8 /* onOrOffUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = onOrOffUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		85404F6523C6820700E355F8 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		85404F6823C6820700E355F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		85404F6A23C6820700E355F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85404F7823C6875900E355F8 /* LightIntents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = LightIntents.intentdefinition; sourceTree = "<group>"; };
+		85404F8023C79CD000E355F8 /* IntentHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHelper.swift; sourceTree = "<group>"; };
+		85404F8223C7A25100E355F8 /* LightIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightIntentHandler.swift; sourceTree = "<group>"; };
+		854F110223CE2DC70021C7DE /* LightActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightActivity.swift; sourceTree = "<group>"; };
 		856F992223A29725001AA655 /* SiriNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		856F992523A29725001AA655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		856F992723A29725001AA655 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,12 +113,26 @@
 		856F994A23A2979B001AA655 /* SiriNew.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriNew.entitlements; sourceTree = "<group>"; };
 		856F994E23A2E54A001AA655 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		856F995023A2E553001AA655 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
-		856F995223A41D34001AA655 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		856F995423A421AC001AA655 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		856F995623A42B48001AA655 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		85404F5623C6820700E355F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85404F5F23C6820700E355F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85404F6323C6820700E355F8 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		856F991F23A29725001AA655 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,11 +154,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85404F5A23C6820700E355F8 /* onOrOff */ = {
+			isa = PBXGroup;
+			children = (
+				85404F5B23C6820700E355F8 /* IntentHandler.swift */,
+				85404F5D23C6820700E355F8 /* Info.plist */,
+			);
+			path = onOrOff;
+			sourceTree = "<group>";
+		};
+		85404F6423C6820700E355F8 /* onOrOffUI */ = {
+			isa = PBXGroup;
+			children = (
+				85404F6523C6820700E355F8 /* IntentViewController.swift */,
+				85404F6723C6820700E355F8 /* MainInterface.storyboard */,
+				85404F6A23C6820700E355F8 /* Info.plist */,
+			);
+			path = onOrOffUI;
+			sourceTree = "<group>";
+		};
+		854F110023CE2CB90021C7DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				856F992523A29725001AA655 /* AppDelegate.swift */,
+				856F992723A29725001AA655 /* SceneDelegate.swift */,
+				856F992B23A29725001AA655 /* Main.storyboard */,
+				856F993123A29728001AA655 /* Assets.xcassets */,
+				856F993323A29728001AA655 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		854F110123CE2CE30021C7DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				856F995423A421AC001AA655 /* Status.swift */,
+				856F995623A42B48001AA655 /* FirebaseService.swift */,
+				85404F5323C63FC600E355F8 /* ButtonList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		856F991923A29725001AA655 = {
 			isa = PBXGroup;
 			children = (
 				856F992423A29725001AA655 /* SiriNew */,
 				856F993E23A29729001AA655 /* SiriNewTests */,
+				85404F5A23C6820700E355F8 /* onOrOff */,
+				85404F6423C6820700E355F8 /* onOrOffUI */,
 				856F992323A29725001AA655 /* Products */,
 				856F994D23A2E549001AA655 /* Frameworks */,
 				D682CF3F915674AB0057615F /* Pods */,
@@ -99,6 +213,8 @@
 			children = (
 				856F992223A29725001AA655 /* SiriNew.app */,
 				856F993B23A29729001AA655 /* SiriNewTests.xctest */,
+				85404F5923C6820700E355F8 /* onOrOff.appex */,
+				85404F6223C6820700E355F8 /* onOrOffUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,17 +223,17 @@
 			isa = PBXGroup;
 			children = (
 				856F994A23A2979B001AA655 /* SiriNew.entitlements */,
-				856F992523A29725001AA655 /* AppDelegate.swift */,
-				856F992723A29725001AA655 /* SceneDelegate.swift */,
-				856F995423A421AC001AA655 /* Status.swift */,
-				856F995623A42B48001AA655 /* FirebaseService.swift */,
+				854F110023CE2CB90021C7DE /* Supporting Files */,
+				854F110123CE2CE30021C7DE /* Model */,
 				856F992923A29725001AA655 /* ViewController.swift */,
-				856F992B23A29725001AA655 /* Main.storyboard */,
-				856F993123A29728001AA655 /* Assets.xcassets */,
-				856F993323A29728001AA655 /* LaunchScreen.storyboard */,
+				85404F5123C5385A00E355F8 /* ButtonTableViewCell.swift */,
+				85404F8023C79CD000E355F8 /* IntentHelper.swift */,
+				854F110223CE2DC70021C7DE /* LightActivity.swift */,
+				85404F8223C7A25100E355F8 /* LightIntentHandler.swift */,
+				85404F4F23C5348700E355F8 /* GoogleService-Info.plist */,
 				856F993623A29729001AA655 /* Info.plist */,
-				856F995223A41D34001AA655 /* GoogleService-Info.plist */,
 				856F992E23A29725001AA655 /* SiriNew.xcdatamodeld */,
+				85404F7823C6875900E355F8 /* LightIntents.intentdefinition */,
 			);
 			path = SiriNew;
 			sourceTree = "<group>";
@@ -156,6 +272,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		85404F5823C6820700E355F8 /* onOrOff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85404F7423C6820700E355F8 /* Build configuration list for PBXNativeTarget "onOrOff" */;
+			buildPhases = (
+				85404F5523C6820700E355F8 /* Sources */,
+				85404F5623C6820700E355F8 /* Frameworks */,
+				85404F5723C6820700E355F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = onOrOff;
+			productName = onOrOff;
+			productReference = 85404F5923C6820700E355F8 /* onOrOff.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		85404F6123C6820700E355F8 /* onOrOffUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85404F7123C6820700E355F8 /* Build configuration list for PBXNativeTarget "onOrOffUI" */;
+			buildPhases = (
+				85404F5E23C6820700E355F8 /* Sources */,
+				85404F5F23C6820700E355F8 /* Frameworks */,
+				85404F6023C6820700E355F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = onOrOffUI;
+			productName = onOrOffUI;
+			productReference = 85404F6223C6820700E355F8 /* onOrOffUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		856F992123A29725001AA655 /* SiriNew */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 856F994423A29729001AA655 /* Build configuration list for PBXNativeTarget "SiriNew" */;
@@ -165,10 +315,13 @@
 				856F991F23A29725001AA655 /* Frameworks */,
 				856F992023A29725001AA655 /* Resources */,
 				06798D62F981CA1BEE397CB1 /* [CP] Embed Pods Frameworks */,
+				85404F7723C6820700E355F8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				85404F6C23C6820700E355F8 /* PBXTargetDependency */,
+				85404F6F23C6820700E355F8 /* PBXTargetDependency */,
 			);
 			name = SiriNew;
 			productName = SiriNew;
@@ -200,10 +353,16 @@
 		856F991A23A29725001AA655 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = EricM;
 				TargetAttributes = {
+					85404F5823C6820700E355F8 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					85404F6123C6820700E355F8 = {
+						CreatedOnToolsVersion = 11.3;
+					};
 					856F992123A29725001AA655 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -228,17 +387,34 @@
 			targets = (
 				856F992123A29725001AA655 /* SiriNew */,
 				856F993A23A29729001AA655 /* SiriNewTests */,
+				85404F5823C6820700E355F8 /* onOrOff */,
+				85404F6123C6820700E355F8 /* onOrOffUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		85404F5723C6820700E355F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85404F6023C6820700E355F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85404F6923C6820700E355F8 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		856F992023A29725001AA655 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				856F993523A29728001AA655 /* LaunchScreen.storyboard in Resources */,
-				856F995323A41D35001AA655 /* GoogleService-Info.plist in Resources */,
+				85404F5023C5348700E355F8 /* GoogleService-Info.plist in Resources */,
 				856F993223A29728001AA655 /* Assets.xcassets in Resources */,
 				856F992D23A29725001AA655 /* Main.storyboard in Resources */,
 			);
@@ -318,15 +494,39 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		85404F5523C6820700E355F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85404F5C23C6820700E355F8 /* IntentHandler.swift in Sources */,
+				85404F7F23C791CB00E355F8 /* LightIntents.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85404F5E23C6820700E355F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85404F6623C6820700E355F8 /* IntentViewController.swift in Sources */,
+				85404F7E23C791CA00E355F8 /* LightIntents.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		856F991E23A29725001AA655 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				856F992A23A29725001AA655 /* ViewController.swift in Sources */,
+				85404F7923C6875900E355F8 /* LightIntents.intentdefinition in Sources */,
+				85404F8323C7A25100E355F8 /* LightIntentHandler.swift in Sources */,
 				856F995523A421AC001AA655 /* Status.swift in Sources */,
 				856F993023A29725001AA655 /* SiriNew.xcdatamodeld in Sources */,
+				85404F5423C63FC600E355F8 /* ButtonList.swift in Sources */,
 				856F992623A29725001AA655 /* AppDelegate.swift in Sources */,
+				854F110323CE2DC70021C7DE /* LightActivity.swift in Sources */,
 				856F995723A42B48001AA655 /* FirebaseService.swift in Sources */,
+				85404F8123C79CD000E355F8 /* IntentHelper.swift in Sources */,
+				85404F5223C5385A00E355F8 /* ButtonTableViewCell.swift in Sources */,
 				856F992823A29725001AA655 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +542,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		85404F6C23C6820700E355F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85404F6123C6820700E355F8 /* onOrOffUI */;
+			targetProxy = 85404F6B23C6820700E355F8 /* PBXContainerItemProxy */;
+		};
+		85404F6F23C6820700E355F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85404F5823C6820700E355F8 /* onOrOff */;
+			targetProxy = 85404F6E23C6820700E355F8 /* PBXContainerItemProxy */;
+		};
 		856F993D23A29729001AA655 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 856F992123A29725001AA655 /* SiriNew */;
@@ -350,6 +560,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		85404F6723C6820700E355F8 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85404F6823C6820700E355F8 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		856F992B23A29725001AA655 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -369,6 +587,86 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		85404F7223C6820700E355F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26RHXP32FH;
+				INFOPLIST_FILE = onOrOffUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pursuit.lightsoff.onOrOffUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85404F7323C6820700E355F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26RHXP32FH;
+				INFOPLIST_FILE = onOrOffUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pursuit.lightsoff.onOrOffUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		85404F7523C6820700E355F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26RHXP32FH;
+				INFOPLIST_FILE = onOrOff/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pursuit.lightsoff.onOrOff;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85404F7623C6820700E355F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26RHXP32FH;
+				INFOPLIST_FILE = onOrOff/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pursuit.lightsoff.onOrOff;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		856F994223A29729001AA655 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -487,17 +785,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14051BC6DEBA4AFA49942B09 /* Pods-SiriNew.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SiriNew/SiriNew.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NTBTFC5S66;
+				DEVELOPMENT_TEAM = 26RHXP32FH;
 				INFOPLIST_FILE = SiriNew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = practice.SiriNew;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pursuit.lightsoff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -509,17 +808,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7CD7537E191E15951898C59C /* Pods-SiriNew.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SiriNew/SiriNew.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NTBTFC5S66;
+				DEVELOPMENT_TEAM = 26RHXP32FH;
 				INFOPLIST_FILE = SiriNew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = practice.SiriNew;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pursuit.lightsoff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -533,7 +833,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BBQX6SNL69;
 				INFOPLIST_FILE = SiriNewTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -555,7 +857,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BBQX6SNL69;
 				INFOPLIST_FILE = SiriNewTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -574,6 +878,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		85404F7123C6820700E355F8 /* Build configuration list for PBXNativeTarget "onOrOffUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85404F7223C6820700E355F8 /* Debug */,
+				85404F7323C6820700E355F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85404F7423C6820700E355F8 /* Build configuration list for PBXNativeTarget "onOrOff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85404F7523C6820700E355F8 /* Debug */,
+				85404F7623C6820700E355F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		856F991D23A29725001AA655 /* Build configuration list for PBXProject "SiriNew" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
