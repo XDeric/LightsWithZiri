@@ -53,24 +53,26 @@
 	<key>INIntentDefinitionNamespace</key>
 	<string>zbNNxv</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>18G1012</string>
+	<string>18G2022</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>11C29</string>
+	<string>11C504</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>11.3</string>
+	<string>11.3.1</string>
 	<key>INIntents</key>
 	<array>
 		<dict>
 			<key>INIntentCategory</key>
-			<string>share</string>
+			<string>generic</string>
 			<key>INIntentConfigurable</key>
 			<true/>
 			<key>INIntentDescription</key>
 			<string>change lights</string>
 			<key>INIntentDescriptionID</key>
 			<string>6BZ2qf</string>
+			<key>INIntentInput</key>
+			<string>state</string>
 			<key>INIntentLastParameterTag</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>INIntentManagedParameterCombinations</key>
 			<dict>
 				<key>state</key>
@@ -116,6 +118,11 @@
 					<string>State</string>
 					<key>INIntentParameterEnumTypeNamespace</key>
 					<string>zbNNxv</string>
+					<key>INIntentParameterMetadata</key>
+					<dict>
+						<key>INIntentParameterMetadataDefaultValue</key>
+						<string>off</string>
+					</dict>
 					<key>INIntentParameterName</key>
 					<string>state</string>
 					<key>INIntentParameterPromptDialogs</key>
@@ -177,7 +184,9 @@
 					</dict>
 				</array>
 				<key>INIntentResponseLastParameterTag</key>
-				<integer>1</integer>
+				<integer>2</integer>
+				<key>INIntentResponseOutput</key>
+				<string>state</string>
 				<key>INIntentResponseParameters</key>
 				<array>
 					<dict>
@@ -211,7 +220,7 @@
 			<key>INIntentType</key>
 			<string>Custom</string>
 			<key>INIntentVerb</key>
-			<string>Send</string>
+			<string>Do</string>
 		</dict>
 	</array>
 	<key>INTypes</key>

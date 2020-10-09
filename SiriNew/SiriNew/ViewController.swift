@@ -66,6 +66,7 @@ class ViewController: UIViewController {
         if message.text == "ON" {
             message.text = "OFF"
         } else {
+            
             message.text = "ON"
         }
     }

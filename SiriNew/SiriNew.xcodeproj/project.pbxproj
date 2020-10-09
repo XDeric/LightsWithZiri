@@ -17,9 +17,9 @@
 		85404F6923C6820700E355F8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85404F6723C6820700E355F8 /* MainInterface.storyboard */; };
 		85404F6D23C6820700E355F8 /* onOrOffUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 85404F6223C6820700E355F8 /* onOrOffUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		85404F7023C6820700E355F8 /* onOrOff.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 85404F5923C6820700E355F8 /* onOrOff.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		85404F7923C6875900E355F8 /* LightIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 85404F7823C6875900E355F8 /* LightIntents.intentdefinition */; };
-		85404F7E23C791CA00E355F8 /* LightIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 85404F7823C6875900E355F8 /* LightIntents.intentdefinition */; };
-		85404F7F23C791CB00E355F8 /* LightIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 85404F7823C6875900E355F8 /* LightIntents.intentdefinition */; };
+		85404F7923C6875900E355F8 /* LightIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 85404F7823C6875900E355F8 /* LightIntents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		85404F7E23C791CA00E355F8 /* LightIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 85404F7823C6875900E355F8 /* LightIntents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		85404F7F23C791CB00E355F8 /* LightIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 85404F7823C6875900E355F8 /* LightIntents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
 		85404F8123C79CD000E355F8 /* IntentHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85404F8023C79CD000E355F8 /* IntentHelper.swift */; };
 		85404F8323C7A25100E355F8 /* LightIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85404F8223C7A25100E355F8 /* LightIntentHandler.swift */; };
 		854F110323CE2DC70021C7DE /* LightActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854F110223CE2DC70021C7DE /* LightActivity.swift */; };
@@ -97,6 +97,7 @@
 		85404F7823C6875900E355F8 /* LightIntents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = LightIntents.intentdefinition; sourceTree = "<group>"; };
 		85404F8023C79CD000E355F8 /* IntentHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHelper.swift; sourceTree = "<group>"; };
 		85404F8223C7A25100E355F8 /* LightIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightIntentHandler.swift; sourceTree = "<group>"; };
+		85412AED23E3317600F9488C /* onOrOff.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = onOrOff.entitlements; sourceTree = "<group>"; };
 		854F110223CE2DC70021C7DE /* LightActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightActivity.swift; sourceTree = "<group>"; };
 		856F992223A29725001AA655 /* SiriNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		856F992523A29725001AA655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +158,7 @@
 		85404F5A23C6820700E355F8 /* onOrOff */ = {
 			isa = PBXGroup;
 			children = (
+				85412AED23E3317600F9488C /* onOrOff.entitlements */,
 				85404F5B23C6820700E355F8 /* IntentHandler.swift */,
 				85404F5D23C6820700E355F8 /* Info.plist */,
 			);
@@ -630,6 +632,7 @@
 		85404F7523C6820700E355F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = onOrOff/onOrOff.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26RHXP32FH;
@@ -650,6 +653,7 @@
 		85404F7623C6820700E355F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = onOrOff/onOrOff.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26RHXP32FH;
