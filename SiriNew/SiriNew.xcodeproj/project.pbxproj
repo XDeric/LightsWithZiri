@@ -23,6 +23,7 @@
 		85404F8123C79CD000E355F8 /* IntentHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85404F8023C79CD000E355F8 /* IntentHelper.swift */; };
 		85404F8323C7A25100E355F8 /* LightIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85404F8223C7A25100E355F8 /* LightIntentHandler.swift */; };
 		854F110323CE2DC70021C7DE /* LightActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854F110223CE2DC70021C7DE /* LightActivity.swift */; };
+		8550B791256ED8D9002D7E2D /* rules.swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8550B790256ED8D9002D7E2D /* rules.swiftlint.yml */; };
 		856F992623A29725001AA655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856F992523A29725001AA655 /* AppDelegate.swift */; };
 		856F992823A29725001AA655 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856F992723A29725001AA655 /* SceneDelegate.swift */; };
 		856F992A23A29725001AA655 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856F992923A29725001AA655 /* ViewController.swift */; };
@@ -99,6 +100,7 @@
 		85404F8223C7A25100E355F8 /* LightIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightIntentHandler.swift; sourceTree = "<group>"; };
 		85412AED23E3317600F9488C /* onOrOff.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = onOrOff.entitlements; sourceTree = "<group>"; };
 		854F110223CE2DC70021C7DE /* LightActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightActivity.swift; sourceTree = "<group>"; };
+		8550B790256ED8D9002D7E2D /* rules.swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = rules.swiftlint.yml; sourceTree = "<group>"; };
 		856F992223A29725001AA655 /* SiriNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		856F992523A29725001AA655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		856F992723A29725001AA655 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				854F110023CE2CB90021C7DE /* Supporting Files */,
 				854F110123CE2CE30021C7DE /* Model */,
 				856F992923A29725001AA655 /* ViewController.swift */,
+				8550B790256ED8D9002D7E2D /* rules.swiftlint.yml */,
 				85404F5123C5385A00E355F8 /* ButtonTableViewCell.swift */,
 				85404F8023C79CD000E355F8 /* IntentHelper.swift */,
 				854F110223CE2DC70021C7DE /* LightActivity.swift */,
@@ -318,6 +321,7 @@
 				856F992023A29725001AA655 /* Resources */,
 				06798D62F981CA1BEE397CB1 /* [CP] Embed Pods Frameworks */,
 				85404F7723C6820700E355F8 /* Embed App Extensions */,
+				8550B78F256ED84F002D7E2D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -418,6 +422,7 @@
 				856F993523A29728001AA655 /* LaunchScreen.storyboard in Resources */,
 				85404F5023C5348700E355F8 /* GoogleService-Info.plist in Resources */,
 				856F993223A29728001AA655 /* Assets.xcassets in Resources */,
+				8550B791256ED8D9002D7E2D /* rules.swiftlint.yml in Resources */,
 				856F992D23A29725001AA655 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +475,23 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		8550B78F256ED84F002D7E2D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		F244E945E0275FEA705BE06E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -635,7 +657,7 @@
 				CODE_SIGN_ENTITLEMENTS = onOrOff/onOrOff.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 26RHXP32FH;
+				DEVELOPMENT_TEAM = NTBTFC5S66;
 				INFOPLIST_FILE = onOrOff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -656,7 +678,7 @@
 				CODE_SIGN_ENTITLEMENTS = onOrOff/onOrOff.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 26RHXP32FH;
+				DEVELOPMENT_TEAM = NTBTFC5S66;
 				INFOPLIST_FILE = onOrOff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
